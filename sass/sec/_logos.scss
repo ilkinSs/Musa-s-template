@@ -1,0 +1,23 @@
+#logos{
+    .container-fluid{
+     .row{
+         .logos-block{
+             width: 100%;
+             height: 150px;
+             margin-top: 60px;
+             transition: .4s;
+             text-align: center;
+             &:hover {
+                 transform: scale(1.1)
+             }
+             img{
+                 width: 70%;
+                 object-fit: cover;
+                
+                 
+                
+             }
+         }
+     }
+    }
+}

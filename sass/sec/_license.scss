@@ -1,0 +1,120 @@
+#license{
+    background-color: #f6f6f6;
+    .container{
+        .row{
+            .license-block{
+                width: 100%;
+                box-sizing: border-box;
+                background-color: white;
+                height: 400px;
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 50px;
+                transition: .3s;
+                box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+                
+                    &:hover{
+                            background-color: #00c9b1;
+                            color: white;
+                        i{
+                            color: white;
+                        }
+                    }
+                
+                
+                
+                h1{
+                    font-weight: 700;
+                    margin-top: 20px;
+                    margin-bottom: 0;
+                }
+                h6{
+                    margin-top: 0;
+                    font-size: 13px;
+                    font-style: italic;
+                    margin-bottom: 30px;
+                }
+                p{
+                    &:first-child{
+                        padding-top: 35px;
+                    }
+                    margin-bottom: 18px;
+                    font-size: 15px;
+                    font-weight: 700;
+                    i{
+                        color: #00c9b1;
+                    }
+                }
+                .buttons{
+                    width: 140px;
+                    height: 40px; 
+                    position: relative;
+                    transition: 3s;
+                    overflow: hidden;
+                    border: 1px solid white;
+                    
+                    margin: 0 auto;
+                    margin-top: 10px;
+                    a{
+                        position: relative;
+                        z-index: 5;
+                        color: white;
+                    }
+                    .button{
+                        width: 100%;
+                        height: 40px;
+                        background-color: white;
+                        color: #00c9b1;
+                        position: absolute;
+                        transition: 0.8s;
+                        top: 0px;
+                        left: 0px;
+                        box-sizing: border-box;
+                        border: 1px solid white;
+                        }
+                        .button-overlay, .button-overlay-top{
+                            width: 100%;
+                            height: 40px;
+                            background-color: #00c9b1;
+                            position: absolute;
+                            z-index: 3;
+                            top: 0px;
+                            left: 0px;
+                            transition: 0.8s;
+                        }
+                        &:hover{
+                            .button-overlay{
+                            width: 0;
+                            top: 0;
+                            left: 140px;
+                            }
+                            .button-overlay-top{
+                                height: 0;
+                                top: 40px;
+                            }
+                            
+                            a{
+                                color: #00c9b1;
+                            }
+                        }
+                    }
+            }
+            .nohover{
+                pointer-events: none;
+                background-color: #00c9b1;
+                color: white;
+                .buttons{
+                    .button-overlay{
+                        width: 0;
+                            top: 0;
+                            left: 140px; 
+                    }
+                    a{
+                        color: #00c9b1;
+                    }
+
+                }
+            }
+        }
+    }
+}

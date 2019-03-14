@@ -1,0 +1,75 @@
+#slider {
+	height: 100vh;
+	background-image: url(../img/1.jpg);
+	background-size: cover;
+	background-position: center center;
+	
+	.slider-content{
+		position: relative;
+		top: 75%;
+		left: 1%;
+		span{
+			color: #02ffe1;
+		}
+		p{
+			color: #666;
+			font-size: 14px;
+			font-style: italic;
+			font-weight: 400;
+			letter-spacing: 1px;
+			margin-bottom: 0;
+			text-transform: capitalize;
+			margin-bottom: 15px;
+		}
+	}
+	.buttons{
+		width: 110px;
+		height: 40px; 
+		position: relative;
+		transition: 3s;
+		overflow: hidden;
+		border: 1px solid #00c9b1;
+		a{
+			position: relative;
+			z-index: 5;
+			color: white;
+		}
+		.button{
+			width: 100%;
+			height: 40px;
+			background-color: white;
+			color: #00c9b1;;
+			position: absolute;
+			transition: 0.8s;
+			top: 0px;
+			left: 0px;
+			}
+			.button-overlay, .button-overlay-top{
+				width: 100%;
+				height: 40px;
+				background-color: #02ffe1;
+				position: absolute;
+				z-index: 3;
+				top: 0px;
+				left: 0px;
+				transition: 0.8s;
+			}
+			&:hover{
+				.button-overlay{
+				width: 0;
+				top: 0;
+				left: 110px;
+				}
+				.button-overlay-top{
+					height: 0;
+					top: 40px;
+				}
+				
+				a{
+					color: #02ffe1;
+				}
+                }
+                
+}
+
+}

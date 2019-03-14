@@ -1,0 +1,92 @@
+#feature{
+    .top-text{
+        text-align: center;
+        p{
+            font-size: 15px;
+            font-weight: 400;
+            position: relative;
+        }
+        p::after{
+            content: " " ;
+            background-color:#02ffe1;
+            width: 13px;
+            height: 13px;
+            position: absolute;
+            top: 150%;
+            left: 50%;
+            transform: rotate(45deg);
+        }
+        p::before{
+            content: " " ;
+            background-color:#02ffe1;
+            width: 100px;
+            height: 2px;
+            position: absolute;
+            top: 162%;
+            left: 44%;
+        }
+    }
+    .row {
+        margin-top: 75px;
+        &:last-child{
+            margin-top: 100px;
+        }
+    }
+    .feature-blok{
+        padding: 0px 15px;
+        height: 195px;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid white;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+        text-align: center ;
+        position: relative;
+        &:hover{
+            box-shadow: 1px 4px 18px -1px rgba(0,0,0,0.75);
+            transition: 0.5s;
+            .feature-icon{
+                background-color: #02ffe1;
+                transition: 0.5s;
+            }
+
+        }
+        .feature-icon{
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 55px;
+            height: 55px;
+            box-sizing: border-box;
+            
+            background-color: black;
+            .feature-icon-blok{
+                margin-top: 14px;
+                margin-left: 14px;
+                width: 27px;
+                height: 27px;
+                box-sizing: border-box;
+                border: 1px solid white;
+                i{
+                    font-size: 15px;
+                    color: white;
+                    
+                    
+                }
+            }
+        }
+        h4{
+            margin-top: 50px;
+            font-size: 20px;
+            font-weight: 400;
+            color: #232323;
+        }
+        p{
+            margin-top: 13px;
+            font-weight: 400;
+            color: #626262;
+            text-align:center;
+        }
+    }
+}
+

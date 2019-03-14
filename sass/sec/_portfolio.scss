@@ -1,0 +1,163 @@
+#portfolio {
+    background-color: #f6f6f6;
+    .container{
+
+    
+
+    .row{
+        .portfolio-block{
+            height: 241px;
+            position: relative;
+            overflow: hidden;
+            
+            
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                }
+                .overflow-blok{
+                   opacity: 1;
+                   transform: scale(.9)
+                }
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: 1;
+                transition: 1s;
+            }
+            .overflow-blok{
+                width: 100%;
+                height: 100%;
+                background-color: #00c9b1cc;
+                position: absolute;
+                z-index: 2;
+                top: 0;
+                left: 0;
+                text-align: center;
+                opacity: 0;
+               transform: scale(.7);
+               transition: .3s;
+               
+                h3{
+                 color: white;
+                }
+                p{
+                 margin: -15px;
+                padding: 0;
+                color: white;
+                font-style: italic;
+                }
+                
+                .circle{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    margin: auto;
+                    margin-top: 65px;
+                    background-color: white;
+                    position: relative;
+                    top: 0px;
+                    left: 0px;
+                    &:hover{
+                        top: -10px;
+                        transition: 1s;
+                    }
+                    i{
+                        margin-top: 15px;
+                        color: #00c9b1;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .buttons{
+        width: 140px;
+        height: 40px; 
+        position: relative;
+        transition: 3s;
+        overflow: hidden;
+        border: 1px solid #00c9b1;
+        margin-top: 25px;
+        a{
+            position: relative;
+            z-index: 5;
+            color: white;
+        }
+        .button{
+            width: 100%;
+            height: 40px;
+            background-color: white;
+            color: #00c9b1;;
+            position: absolute;
+            transition: 0.8s;
+            top: 0px;
+            left: 0px;
+            
+            }
+            .button-overlay, .button-overlay-top{
+                width: 100%;
+                height: 40px;
+                background-color: #00c9b1;
+                position: absolute;
+                z-index: 3;
+                top: 0px;
+                left: 0px;
+                transition: 0.8s;
+            }
+            &:hover{
+                .button-overlay{
+                width: 0;
+                top: 0;
+                left: 140px;
+                }
+                .button-overlay-top{
+                    height: 0;
+                    top: 40px;
+                }
+                
+                a{
+                    color: #00c9b1;
+                }
+            }
+        }
+    
+
+    .row{
+        .last-portfolio-block{
+            overflow: hidden;
+            width: 100%;
+            height: 170px;
+            box-sizing: border-box;
+           
+            position: relative;
+            img{
+                width: 110%;
+                position: absolute;
+            }
+            .overflow-block{
+                width: 90%;
+                height: 90%;
+                background-color: rgba(255, 255, 255, 0.685);
+                position: absolute;
+                top: 5%;
+                left: 5%;
+                text-align: center;
+                i{
+                    margin-top: 10px;
+                    font-size: 45px;
+                    color: #00c9b1;
+                }
+                h1{
+                    margin-top: 5px;
+                }
+                p{
+                   font-weight: 600;
+                }
+            }
+        }
+    }
+    }
+}

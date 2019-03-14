@@ -1,0 +1,6 @@
+@mixin paragraph ($font-size, $font-weight, $position)
+{
+    font-size: $font-size;
+    font-weight: $font-weight;
+    position: $position;
+}
